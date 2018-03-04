@@ -19,7 +19,7 @@ power_consumption <- transform(power_consumption, dateTime=strptime(paste(Date,T
 
 # generating plot1.png and saves it to
 # data directory
-png(filename = "./data/plot1.png")
+png(filename = "./data/plot1.png", width = 480, height = 480, units = "px")
 
 hist(power_consumption$Global_active_power,col="red",  main="Global Active Power",
      xlab="Global Active Power (kilowatts)")
