@@ -36,7 +36,7 @@ matlines(data.matrix(power_consumption$dateTime),data.matrix(power_consumption$S
 legend("topright", col = c("black","red","blue"), legend =c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty=1, bty = "n")
 
 #plot 4
-plot(power_consumption$dateTime,power_consumption$Voltage, type ="l",
+plot(power_consumption$dateTime,power_consumption$Global_reactive_power, type ="l",
      col="black",  ylab = "Global_Reactive_Power", xlab="datetime")
 
 
