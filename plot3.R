@@ -19,7 +19,7 @@ power_consumption <- transform(power_consumption, dateTime=strptime(paste(Date,T
 
 # generating plot1.png and saves it to
 # data directory
-png(filename = "./data/plot3.png")
+png(filename = "./data/plot3.png", width = 480, height = 480, units = "px")
 plot(power_consumption$dateTime,power_consumption$Sub_metering_1, type ="l",
       ylab = "Energy Sub Metering", xlab="")
 matlines(data.matrix(power_consumption$dateTime),data.matrix(power_consumption$Sub_metering_2),type="l",col="red")
