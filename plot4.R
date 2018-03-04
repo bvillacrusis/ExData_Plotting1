@@ -19,7 +19,7 @@ power_consumption <- transform(power_consumption, dateTime=strptime(paste(Date,T
 
 # generating plot1.png and saves it to
 # data directory
-png(filename = "./data/plot4.png")
+png(filename = "./data/plot4.png", width = 480, height = 480, units = "px")
 par(mfrow=c(2,2))
 #plot 1
 plot(power_consumption$dateTime,power_consumption$Global_active_power, type ="l",
